@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57E2AAC5281B04DA002C6FC9 /* ssh_manager_status_barApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AAC4281B04DA002C6FC9 /* ssh_manager_status_barApp.swift */; };
+		57E2AAC7281B04DA002C6FC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AAC6281B04DA002C6FC9 /* ContentView.swift */; };
+		57E2AAC9281B04DB002C6FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E2AAC8281B04DB002C6FC9 /* Assets.xcassets */; };
+		57E2AACC281B04DB002C6FC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E2AACB281B04DB002C6FC9 /* Preview Assets.xcassets */; };
+		57E2AACE281B04DB002C6FC9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AACD281B04DB002C6FC9 /* Persistence.swift */; };
+		57E2AAD1281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AACF281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodeld */; };
+		57E2AADC281B04DC002C6FC9 /* ssh_manager_status_barTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AADB281B04DC002C6FC9 /* ssh_manager_status_barTests.swift */; };
+		57E2AAE6281B04DC002C6FC9 /* ssh_manager_status_barUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AAE5281B04DC002C6FC9 /* ssh_manager_status_barUITests.swift */; };
+		57E2AAE8281B04DC002C6FC9 /* ssh_manager_status_barUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AAE7281B04DC002C6FC9 /* ssh_manager_status_barUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57E2AAD8281B04DC002C6FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57E2AAB9281B04DA002C6FC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57E2AAC0281B04DA002C6FC9;
+			remoteInfo = "ssh-manager-status-bar";
+		};
+		57E2AAE2281B04DC002C6FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57E2AAB9281B04DA002C6FC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57E2AAC0281B04DA002C6FC9;
+			remoteInfo = "ssh-manager-status-bar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57E2AAC1281B04DA002C6FC9 /* ssh-manager-status-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ssh-manager-status-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E2AAC4281B04DA002C6FC9 /* ssh_manager_status_barApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssh_manager_status_barApp.swift; sourceTree = "<group>"; };
+		57E2AAC6281B04DA002C6FC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		57E2AAC8281B04DB002C6FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57E2AACB281B04DB002C6FC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57E2AACD281B04DB002C6FC9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		57E2AAD0281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ssh_manager_status_bar.xcdatamodel; sourceTree = "<group>"; };
+		57E2AAD2281B04DB002C6FC9 /* ssh_manager_status_bar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ssh_manager_status_bar.entitlements; sourceTree = "<group>"; };
+		57E2AAD7281B04DC002C6FC9 /* ssh-manager-status-barTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ssh-manager-status-barTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E2AADB281B04DC002C6FC9 /* ssh_manager_status_barTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssh_manager_status_barTests.swift; sourceTree = "<group>"; };
+		57E2AAE1281B04DC002C6FC9 /* ssh-manager-status-barUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ssh-manager-status-barUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57E2AAE5281B04DC002C6FC9 /* ssh_manager_status_barUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssh_manager_status_barUITests.swift; sourceTree = "<group>"; };
+		57E2AAE7281B04DC002C6FC9 /* ssh_manager_status_barUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssh_manager_status_barUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57E2AABE281B04DA002C6FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E2AAD4281B04DC002C6FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E2AADE281B04DC002C6FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57E2AAB8281B04DA002C6FC9 = {
+			isa = PBXGroup;
+			children = (
+				57E2AAC3281B04DA002C6FC9 /* ssh-manager-status-bar */,
+				57E2AADA281B04DC002C6FC9 /* ssh-manager-status-barTests */,
+				57E2AAE4281B04DC002C6FC9 /* ssh-manager-status-barUITests */,
+				57E2AAC2281B04DA002C6FC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57E2AAC2281B04DA002C6FC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57E2AAC1281B04DA002C6FC9 /* ssh-manager-status-bar.app */,
+				57E2AAD7281B04DC002C6FC9 /* ssh-manager-status-barTests.xctest */,
+				57E2AAE1281B04DC002C6FC9 /* ssh-manager-status-barUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57E2AAC3281B04DA002C6FC9 /* ssh-manager-status-bar */ = {
+			isa = PBXGroup;
+			children = (
+				57E2AAC4281B04DA002C6FC9 /* ssh_manager_status_barApp.swift */,
+				57E2AAC6281B04DA002C6FC9 /* ContentView.swift */,
+				57E2AAC8281B04DB002C6FC9 /* Assets.xcassets */,
+				57E2AACD281B04DB002C6FC9 /* Persistence.swift */,
+				57E2AAD2281B04DB002C6FC9 /* ssh_manager_status_bar.entitlements */,
+				57E2AACF281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodeld */,
+				57E2AACA281B04DB002C6FC9 /* Preview Content */,
+			);
+			path = "ssh-manager-status-bar";
+			sourceTree = "<group>";
+		};
+		57E2AACA281B04DB002C6FC9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				57E2AACB281B04DB002C6FC9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57E2AADA281B04DC002C6FC9 /* ssh-manager-status-barTests */ = {
+			isa = PBXGroup;
+			children = (
+				57E2AADB281B04DC002C6FC9 /* ssh_manager_status_barTests.swift */,
+			);
+			path = "ssh-manager-status-barTests";
+			sourceTree = "<group>";
+		};
+		57E2AAE4281B04DC002C6FC9 /* ssh-manager-status-barUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57E2AAE5281B04DC002C6FC9 /* ssh_manager_status_barUITests.swift */,
+				57E2AAE7281B04DC002C6FC9 /* ssh_manager_status_barUITestsLaunchTests.swift */,
+			);
+			path = "ssh-manager-status-barUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57E2AAC0281B04DA002C6FC9 /* ssh-manager-status-bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57E2AAEB281B04DC002C6FC9 /* Build configuration list for PBXNativeTarget "ssh-manager-status-bar" */;
+			buildPhases = (
+				57E2AABD281B04DA002C6FC9 /* Sources */,
+				57E2AABE281B04DA002C6FC9 /* Frameworks */,
+				57E2AABF281B04DA002C6FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ssh-manager-status-bar";
+			productName = "ssh-manager-status-bar";
+			productReference = 57E2AAC1281B04DA002C6FC9 /* ssh-manager-status-bar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57E2AAD6281B04DC002C6FC9 /* ssh-manager-status-barTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57E2AAEE281B04DC002C6FC9 /* Build configuration list for PBXNativeTarget "ssh-manager-status-barTests" */;
+			buildPhases = (
+				57E2AAD3281B04DC002C6FC9 /* Sources */,
+				57E2AAD4281B04DC002C6FC9 /* Frameworks */,
+				57E2AAD5281B04DC002C6FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57E2AAD9281B04DC002C6FC9 /* PBXTargetDependency */,
+			);
+			name = "ssh-manager-status-barTests";
+			productName = "ssh-manager-status-barTests";
+			productReference = 57E2AAD7281B04DC002C6FC9 /* ssh-manager-status-barTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57E2AAE0281B04DC002C6FC9 /* ssh-manager-status-barUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57E2AAF1281B04DC002C6FC9 /* Build configuration list for PBXNativeTarget "ssh-manager-status-barUITests" */;
+			buildPhases = (
+				57E2AADD281B04DC002C6FC9 /* Sources */,
+				57E2AADE281B04DC002C6FC9 /* Frameworks */,
+				57E2AADF281B04DC002C6FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57E2AAE3281B04DC002C6FC9 /* PBXTargetDependency */,
+			);
+			name = "ssh-manager-status-barUITests";
+			productName = "ssh-manager-status-barUITests";
+			productReference = 57E2AAE1281B04DC002C6FC9 /* ssh-manager-status-barUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57E2AAB9281B04DA002C6FC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					57E2AAC0281B04DA002C6FC9 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					57E2AAD6281B04DC002C6FC9 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 57E2AAC0281B04DA002C6FC9;
+					};
+					57E2AAE0281B04DC002C6FC9 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 57E2AAC0281B04DA002C6FC9;
+					};
+				};
+			};
+			buildConfigurationList = 57E2AABC281B04DA002C6FC9 /* Build configuration list for PBXProject "ssh-manager-status-bar" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57E2AAB8281B04DA002C6FC9;
+			productRefGroup = 57E2AAC2281B04DA002C6FC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57E2AAC0281B04DA002C6FC9 /* ssh-manager-status-bar */,
+				57E2AAD6281B04DC002C6FC9 /* ssh-manager-status-barTests */,
+				57E2AAE0281B04DC002C6FC9 /* ssh-manager-status-barUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57E2AABF281B04DA002C6FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E2AACC281B04DB002C6FC9 /* Preview Assets.xcassets in Resources */,
+				57E2AAC9281B04DB002C6FC9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E2AAD5281B04DC002C6FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E2AADF281B04DC002C6FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57E2AABD281B04DA002C6FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E2AACE281B04DB002C6FC9 /* Persistence.swift in Sources */,
+				57E2AAC7281B04DA002C6FC9 /* ContentView.swift in Sources */,
+				57E2AAD1281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodeld in Sources */,
+				57E2AAC5281B04DA002C6FC9 /* ssh_manager_status_barApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E2AAD3281B04DC002C6FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E2AADC281B04DC002C6FC9 /* ssh_manager_status_barTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E2AADD281B04DC002C6FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E2AAE6281B04DC002C6FC9 /* ssh_manager_status_barUITests.swift in Sources */,
+				57E2AAE8281B04DC002C6FC9 /* ssh_manager_status_barUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57E2AAD9281B04DC002C6FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57E2AAC0281B04DA002C6FC9 /* ssh-manager-status-bar */;
+			targetProxy = 57E2AAD8281B04DC002C6FC9 /* PBXContainerItemProxy */;
+		};
+		57E2AAE3281B04DC002C6FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57E2AAC0281B04DA002C6FC9 /* ssh-manager-status-bar */;
+			targetProxy = 57E2AAE2281B04DC002C6FC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		57E2AAE9281B04DC002C6FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57E2AAEA281B04DC002C6FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		57E2AAEC281B04DC002C6FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ssh-manager-status-bar/ssh_manager_status_bar.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ssh-manager-status-bar/Preview Content\"";
+				DEVELOPMENT_TEAM = 75YXGJGT48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "radagv.ssh-manager-status-bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		57E2AAED281B04DC002C6FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ssh-manager-status-bar/ssh_manager_status_bar.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ssh-manager-status-bar/Preview Content\"";
+				DEVELOPMENT_TEAM = 75YXGJGT48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "radagv.ssh-manager-status-bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		57E2AAEF281B04DC002C6FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75YXGJGT48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "radagv.ssh-manager-status-barTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ssh-manager-status-bar.app/Contents/MacOS/ssh-manager-status-bar";
+			};
+			name = Debug;
+		};
+		57E2AAF0281B04DC002C6FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75YXGJGT48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "radagv.ssh-manager-status-barTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ssh-manager-status-bar.app/Contents/MacOS/ssh-manager-status-bar";
+			};
+			name = Release;
+		};
+		57E2AAF2281B04DC002C6FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75YXGJGT48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "radagv.ssh-manager-status-barUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ssh-manager-status-bar";
+			};
+			name = Debug;
+		};
+		57E2AAF3281B04DC002C6FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75YXGJGT48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "radagv.ssh-manager-status-barUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ssh-manager-status-bar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57E2AABC281B04DA002C6FC9 /* Build configuration list for PBXProject "ssh-manager-status-bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57E2AAE9281B04DC002C6FC9 /* Debug */,
+				57E2AAEA281B04DC002C6FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57E2AAEB281B04DC002C6FC9 /* Build configuration list for PBXNativeTarget "ssh-manager-status-bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57E2AAEC281B04DC002C6FC9 /* Debug */,
+				57E2AAED281B04DC002C6FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57E2AAEE281B04DC002C6FC9 /* Build configuration list for PBXNativeTarget "ssh-manager-status-barTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57E2AAEF281B04DC002C6FC9 /* Debug */,
+				57E2AAF0281B04DC002C6FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57E2AAF1281B04DC002C6FC9 /* Build configuration list for PBXNativeTarget "ssh-manager-status-barUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57E2AAF2281B04DC002C6FC9 /* Debug */,
+				57E2AAF3281B04DC002C6FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57E2AACF281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				57E2AAD0281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodel */,
+			);
+			currentVersion = 57E2AAD0281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodel */;
+			path = ssh_manager_status_bar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 57E2AAB9281B04DA002C6FC9 /* Project object */;
+}
