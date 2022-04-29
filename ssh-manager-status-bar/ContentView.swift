@@ -9,77 +9,98 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    
+    private let path = "/Users/radagv/.ssh"
+    
+    @AppStorage("current_key") var currentKey = "id_rsa_personal"
+    @State var keys: [String] = []
+    var onSelection: (String) -> Void
+    
+    @discardableResult
+    func shell(_ command: String) -> String {
+        let task = Process()
+        let pipe = Pipe()
+    
+        task.standardOutput = pipe
+        task.standardError = pipe
+        task.arguments = ["-c", command]
+        task.launchPath = "/bin/zsh"
+        task.launch()
+    
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output = String(data: data, encoding: .utf8)!
+    
+        return output
+    }
+    
+    init(onSelection handler: @escaping (String) -> Void) {
+        onSelection = handler
+        select(key: currentKey)
+    }
+    
+    func load() {
+        do {
+            let manager = FileManager.default
+            let files = try manager.contentsOfDirectory(atPath: path)
+            let filtered = files.filter { $0.hasPrefix("id_rsa") && !$0.hasSuffix(".pub") }
+        
+            keys = filtered
+//                .filter { $0 != "id_rsa" }
+        } catch let error {
+            print(error)
+        }
+    }
+    
+    func select(key: String) {
+        shell("ssh-add -D")
+        shell("ssh-add \(path.appending("/\(key)"))")
+        
+        currentKey = key
+        onSelection(key)
+    }
+    
+    func copy(key: String) {
+        let p = path.appending("/\(key)").appending(".pub")
+        
+        shell("pbcopy < \(p)")
+    }
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+        ScrollView {
+            LazyVStack(alignment: .leading) {
+                VStack(alignment: .center) {
+                    Text("SSH KEYS")
+                        .font(.title)
+                }
+                .frame(maxWidth: .infinity)
+                ForEach(keys, id: \.self) { item in
+                    HStack(spacing: 12) {
+                        Button(action: { select(key: item) }) {
+                            HStack {
+                                Text(item == "id_rsa" ? "General" : item.replacingOccurrences(of: "id_rsa_", with: "").capitalized)
+                                    .padding()
+                                    .contentShape(Rectangle())
+                                Spacer()
+                            }
+                            .foregroundColor(item == currentKey ? .white : .primary)
+                            .background(item == currentKey ? Color.accentColor : Color("background"))
+                        }
+                        .buttonStyle(.plain)
+                        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                        
+                        Button(action: { copy(key: item) }) {
+                            Image(systemName: "doc.on.clipboard")
+                                .padding()
+                                .background(Color("background"))
+                        }
+                        .buttonStyle(.plain)
+                        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+            .padding()
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-}
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        .frame(height: 400)
+        .onAppear(perform: load)
     }
 }

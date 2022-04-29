@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		578C08AC281B99C600CF2BEB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 578C08AB281B99C600CF2BEB /* Info.plist */; };
 		57E2AAC5281B04DA002C6FC9 /* ssh_manager_status_barApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AAC4281B04DA002C6FC9 /* ssh_manager_status_barApp.swift */; };
 		57E2AAC7281B04DA002C6FC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2AAC6281B04DA002C6FC9 /* ContentView.swift */; };
 		57E2AAC9281B04DB002C6FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E2AAC8281B04DB002C6FC9 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		578C08AB281B99C600CF2BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57E2AAC1281B04DA002C6FC9 /* ssh-manager-status-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ssh-manager-status-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E2AAC4281B04DA002C6FC9 /* ssh_manager_status_barApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ssh_manager_status_barApp.swift; sourceTree = "<group>"; };
 		57E2AAC6281B04DA002C6FC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				57E2AAD2281B04DB002C6FC9 /* ssh_manager_status_bar.entitlements */,
 				57E2AACF281B04DB002C6FC9 /* ssh_manager_status_bar.xcdatamodeld */,
 				57E2AACA281B04DB002C6FC9 /* Preview Content */,
+				578C08AB281B99C600CF2BEB /* Info.plist */,
 			);
 			path = "ssh-manager-status-bar";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			files = (
 				57E2AACC281B04DB002C6FC9 /* Preview Assets.xcassets in Resources */,
 				57E2AAC9281B04DB002C6FC9 /* Assets.xcassets in Resources */,
+				578C08AC281B99C600CF2BEB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +436,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssh-manager-status-bar/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +464,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ssh-manager-status-bar/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
